@@ -1,0 +1,17 @@
+@media screen and (max-width:767px) {
+  .form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: .6rem;
+  }
+  .form .form-group{
+    flex-wrap: wrap;
+  }
+  .form .form-group.btn{
+    margin-top: 1.8rem;
+  }
+  .container{
+    width: 100%;
+  }
+}

@@ -14,7 +14,10 @@
    2.0- Form
 * 3- Common Style 
    3.0- Container Section
-   3.1-  Font Family
+   3.1- Font Family
+   3-2- Label
+   3.3- Input
+   3.4- PlaceHolder 
 */
 /** 1- General Style */
 /**  1.0- Universal Element */
@@ -49,7 +52,7 @@ body{
  color: #FFF;
  font-family: inherit;
  font-size: 1.2rem;
- padding: .7rem;
+ padding: .5rem;
 }
 
 
@@ -71,7 +74,7 @@ body{
   font-family: 'DroidKufi-Regular';
   src: url(../fonts/DroidKufi-Regular.ttf);
 }
-/** 3-2 Label */
+/** 3-2- Label */
 .form-group label{
   display: block;
   font-size: .9rem;
@@ -86,7 +89,7 @@ body{
   width: 100%;
   outline: 0;
   padding: 1rem;
-  border: unset;
+  border: transparent;
   border-bottom: 1px solid #ccc;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   border-radius: .2rem;
@@ -95,6 +98,9 @@ body{
   -moz-border-radius: .2rem;
   -ms-border-radius: .2rem;
   -o-border-radius: .2rem;
+}
+.form-group .form-control:focus{
+  border: 1px solid #009688;
 }
 /** 3.4- PlaceHolder */
 ::placeholder{
