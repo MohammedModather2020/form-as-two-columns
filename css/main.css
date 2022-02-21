@@ -1,0 +1,103 @@
+/* 
+* Challenge Name    : عمل نموذج بسيط بأكثر من عمود
+* Start Date        : 21-2-2022
+* Last Update       : 21-2-2022
+* End Date          : 21-2-2022
+* Contact Us        : mohammedmodather144@gmail.com
+* Git Hub url       : https://github.com/MohammedModather2020
+*/
+/* 
+* 1- General Style
+   1.0- Universal Element
+   1.1- Body Style
+* 2- Section Style
+   2.0- Form
+* 3- Common Style 
+   3.0- Container Section
+   3.1-  Font Family
+*/
+/** 1- General Style */
+/**  1.0- Universal Element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/** 1.1- Body Style */
+body{
+  font-family: 'DroidKufi-Regular', sans-serif;
+}
+/** 2- Section Style */
+/**  2.0- Form */
+.form{
+  margin-top: 2rem;
+  background-color: #F6F6F6;
+  padding: 2rem;
+  gap: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.form .form-group.textarea{
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+.form .form-group.btn{
+  grid-column: 1 / 3;
+}
+.form .form-group input[type='submit']{
+ background-color: #009688 ;
+ color: #FFF;
+ font-family: inherit;
+ font-size: 1.2rem;
+ padding: .7rem;
+}
+
+
+
+
+/**3- Common Style  */
+/** 3.0- Container Section */
+.container{
+  width: 80%;
+  margin: auto;
+  padding: .2rem;
+}
+/** 3.1- Font Family */
+@font-face {
+  font-family: 'DroidKufi-Bold';
+  src: url(../fonts/DroidKufi-Bold.ttf);
+}
+@font-face {
+  font-family: 'DroidKufi-Regular';
+  src: url(../fonts/DroidKufi-Regular.ttf);
+}
+/** 3-2 Label */
+.form-group label{
+  display: block;
+  font-size: .9rem;
+  color: #000;
+}
+.form-group label .required{
+  color: red;
+}
+/** 3.3- Input */
+.form-group .form-control{
+  display: block;
+  width: 100%;
+  outline: 0;
+  padding: 1rem;
+  border: unset;
+  border-bottom: 1px solid #ccc;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  border-radius: .2rem;
+  resize: none;
+  -webkit-border-radius: .2rem;
+  -moz-border-radius: .2rem;
+  -ms-border-radius: .2rem;
+  -o-border-radius: .2rem;
+}
+/** 3.4- PlaceHolder */
+::placeholder{
+  color: #aaa;
+  font-size: .8rem;
+}
